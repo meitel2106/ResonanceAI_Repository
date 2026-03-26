@@ -1,1 +1,32 @@
+name: 🌟 Daily Quotes Generator
 
+on:
+  schedule:
+    # 毎日、日本時間の深夜0時（UTCの15時）に自動実行！
+    - cron: '0 15 * * *'
+  workflow_dispatch: # 👈 手動でいつでもテスト実行できる魔法のボタン！
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📦 コードをチェックアウト
+        uses: actions/checkout@v3
+
+      - name: 🐍 Pythonの準備
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 🤖 AIで名言を生成（Python実行）
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python generate_quotes.py
+
+      - name: 💾 生成されたテキストをGitHubに保存（Push）
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add quotes.json
+          git commit -m "✨ 本日の名言を更新！ [skip ci]" || echo "変更がありません"
+          git push
