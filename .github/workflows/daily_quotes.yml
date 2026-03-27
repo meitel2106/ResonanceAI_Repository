@@ -12,6 +12,11 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    # 🌟🌟🌟 これを追加！未来のエンジン（Node24）を強制起動するスイッチ！ 🌟🌟🌟
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      
     steps:
       # 🌟 警告対策：道具を最新の「v4」にバージョンアップ！
       - name: 📦 コードをチェックアウト
