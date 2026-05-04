@@ -1,0 +1,386 @@
+[
+    {
+        "quote": "To be, or not to be, that is the question.",
+        "author": "William Shakespeare"
+    },
+    {
+        "quote": "Genius is 1% inspiration and 99% perspiration.",
+        "author": "Thomas Edison"
+    },
+    {
+        "quote": "Imagination is more important than knowledge.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+        "author": "Nelson Mandela"
+    },
+    {
+        "quote": "As soon as you trust yourself, you will know how to live.",
+        "author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "quote": "We become what we think about.",
+        "author": "Earl Nightingale"
+    },
+    {
+        "quote": "Don't let the noise of others' opinions drown out your own inner voice.",
+        "author": "Steve Jobs"
+    },
+    {
+        "quote": "Peace begins with a smile.",
+        "author": "Mother Teresa"
+    },
+    {
+        "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+        "author": "Thomas Edison"
+    },
+    {
+        "quote": "In the middle of difficulty lies opportunity.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Your time is limited, so don't waste it living someone else's life.",
+        "author": "Steve Jobs"
+    },
+    {
+        "quote": "Yesterday is but today's memory, and tomorrow is today's dream.",
+        "author": "Khalil Gibran"
+    },
+    {
+        "quote": "In the end, it's not how you lived, but how you loved.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.",
+        "author": "Charles Darwin"
+    },
+    {
+        "quote": "I will either find a way, or make one.",
+        "author": "Hannibal"
+    },
+    {
+        "quote": "All our dreams can come true, if we have the courage to pursue them.",
+        "author": "Walt Disney"
+    },
+    {
+        "quote": "A person who never made a mistake never tried anything new.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Education is the most powerful weapon which you can use to change the world.",
+        "author": "Nelson Mandela"
+    },
+    {
+        "quote": "It is in your moments of decision that your destiny is shaped.",
+        "author": "Tony Robbins"
+    },
+    {
+        "quote": "Happiness doesn't depend on what you have or who you are, it solely relies on what you think.",
+        "author": "Dale Carnegie"
+    },
+    {
+        "quote": "If you want to live your life to the absolute fullest, live in the present.",
+        "author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "quote": "All we have to decide is what to do with the time that is given us.",
+        "author": "J.R.R. Tolkien"
+    },
+    {
+        "quote": "Success is 99% failure.",
+        "author": "Soichiro Honda"
+    },
+    {
+        "quote": "People are the castle, people are the stone walls, people are the moat.",
+        "author": "Shingen Takeda"
+    },
+    {
+        "quote": "It always seems impossible until it's done.",
+        "author": "Nelson Mandela"
+    },
+    {
+        "quote": "There is more to life than increasing its speed.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "quote": "Life is 10% what happens to you and 90% how you react to it.",
+        "author": "Charles R. Swindoll"
+    },
+    {
+        "quote": "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "quote": "The best way to predict the future is to create it.",
+        "author": "Peter Drucker"
+    },
+    {
+        "quote": "To love oneself is the beginning of a lifelong romance.",
+        "author": "Oscar Wilde"
+    },
+    {
+        "quote": "Thoughts become things.",
+        "author": "Napoleon Hill"
+    },
+    {
+        "quote": "Small changes make a big difference.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+        "author": "Thomas Edison"
+    },
+    {
+        "quote": "Nothing great in the world has ever been accomplished without passion.",
+        "author": "Georg Wilhelm Friedrich Hegel"
+    },
+    {
+        "quote": "Let him who would move the world first move himself.",
+        "author": "Socrates"
+    },
+    {
+        "quote": "Knowing is not enough; we must apply.",
+        "author": "Johann Wolfgang von Goethe"
+    },
+    {
+        "quote": "The only way to do great work is to love what you do.",
+        "author": "Steve Jobs"
+    },
+    {
+        "quote": "It is better to light a candle than curse the darkness.",
+        "author": "Eleanor Roosevelt"
+    },
+    {
+        "quote": "Whether you think you can or you think you can't, you're right.",
+        "author": "Henry Ford"
+    },
+    {
+        "quote": "Rock bottom became the solid foundation on which I rebuilt my life.",
+        "author": "J.K. Rowling"
+    },
+    {
+        "quote": "Nothing is impossible, the word itself says 'I'm possible'!",
+        "author": "Audrey Hepburn"
+    },
+    {
+        "quote": "If today were the last day of my life, would I want to do what I am about to do today?",
+        "author": "Steve Jobs"
+    },
+    {
+        "quote": "The secret to enjoying life is to stop being ordinary.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "The only true wisdom is in knowing you know nothing.",
+        "author": "Socrates"
+    },
+    {
+        "quote": "Success is stumbling from failure to failure with no loss of enthusiasm.",
+        "author": "Winston Churchill"
+    },
+    {
+        "quote": "If you want to be happy, be.",
+        "author": "Leo Tolstoy"
+    },
+    {
+        "quote": "It is only with the heart that one can see rightly; what is essential is invisible to the eye.",
+        "author": "Antoine de Saint-Exupéry"
+    },
+    {
+        "quote": "Be the change that you wish to see in the world.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "quote": "Taking the first step is the beginning of everything.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Wise men learn more from fools than fools from the wise.",
+        "author": "Cato the Elder"
+    },
+    {
+        "quote": "A life without purpose is like a ship without a rudder.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Action is the foundational key to all success.",
+        "author": "Pablo Picasso"
+    },
+    {
+        "quote": "Difficulties make you stronger.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Laughter is the shortest distance between two people.",
+        "author": "Victor Borge"
+    },
+    {
+        "quote": "We cannot solve our problems with the same thinking we used when we created them.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Today is the first day of the rest of your life.",
+        "author": "Charles Dederich"
+    },
+    {
+        "quote": "It is not important to be better than someone else, but to be better than yesterday.",
+        "author": "Jigoro Kano"
+    },
+    {
+        "quote": "Adversity makes men wise.",
+        "author": "Euripides"
+    },
+    {
+        "quote": "Love does not consist in gazing at each other, but in looking outward together in the same direction.",
+        "author": "Antoine de Saint-Exupéry"
+    },
+    {
+        "quote": "Life is what we make it, always has been, always will be.",
+        "author": "Grandma Moses"
+    },
+    {
+        "quote": "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+        "author": "Buddha"
+    },
+    {
+        "quote": "I learned that courage was not the absence of fear, but the triumph over it.",
+        "author": "Nelson Mandela"
+    },
+    {
+        "quote": "I will prepare and some day my chance will come.",
+        "author": "Abraham Lincoln"
+    },
+    {
+        "quote": "Believe in your own value. Otherwise, no one else will.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "The starting point of all achievement is desire.",
+        "author": "Napoleon Hill"
+    },
+    {
+        "quote": "To accomplish great things, we must not only act, but also dream.",
+        "author": "Anatole France"
+    },
+    {
+        "quote": "Even the darkest night will end and the sun will rise.",
+        "author": "Victor Hugo"
+    },
+    {
+        "quote": "Being yourself is one of the bravest things you can do.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "True love begins when nothing is looked for in return.",
+        "author": "Antoine de Saint-Exupéry"
+    },
+    {
+        "quote": "What you want to achieve is already present within you as a seed.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Patience is bitter, but its fruit is sweet.",
+        "author": "Jean-Jacques Rousseau"
+    },
+    {
+        "quote": "Doing good to others is doing good to yourself.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Reading is thinking with someone else's head instead of one's own.",
+        "author": "Arthur Schopenhauer"
+    },
+    {
+        "quote": "Experience is simply the name we give our mistakes.",
+        "author": "Oscar Wilde"
+    },
+    {
+        "quote": "To live a happy life, you need a little courage, a little knowledge, and a little imagination.",
+        "author": "Charlie Chaplin"
+    },
+    {
+        "quote": "Kindness is the language which the deaf can hear and the blind can see.",
+        "author": "Mark Twain"
+    },
+    {
+        "quote": "An ordinary day is actually the greatest treasure.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "What is necessary to make dreams come true is not talent, but the power to continue.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Have the space to laugh at yourself, especially in difficult situations.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Anyone who stops learning is old, whether at twenty or eighty.",
+        "author": "Henry Ford"
+    },
+    {
+        "quote": "Shine your light. It might be a beacon for someone else.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Self-trust is the first secret of success.",
+        "author": "Ralph Waldo Emerson"
+    },
+    {
+        "quote": "Life is like a short story. What matters is not its length, but its content.",
+        "author": "Seneca"
+    },
+    {
+        "quote": "There is no greater happiness than being needed by someone.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Never forget gratitude. It is the source of all abundance.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Cherish this moment. It creates your future.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Boys, be ambitious.",
+        "author": "William S. Clark"
+    },
+    {
+        "quote": "Without passion, nothing starts.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "You only live once. You lose if you don't enjoy it.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "It is never too late to try.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "Treasure every encounter, for it will never recur.",
+        "author": "Sen no Rikyu"
+    },
+    {
+        "quote": "Continuity is power.",
+        "author": "Anonymous"
+    },
+    {
+        "quote": "If you try, you can do it. If you don't, you can't.",
+        "author": "Yozan Uesugi"
+    },
+    {
+        "quote": "Fall seven times, stand up eight.",
+        "author": "Japanese Proverb"
+    },
+    {
+        "quote": "The plan for the day is made in the morning.",
+        "author": "Chinese Proverb"
+    },
+    {
+        "quote": "A journey of a thousand miles begins with a single step.",
+        "author": "Laozi"
+    }
+]
