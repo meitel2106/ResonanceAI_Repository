@@ -1,0 +1,394 @@
+[
+    {
+        "author": "El Sabio Antiguo",
+        "quote": "No hay noche que no termine en amanecer. La luz seguramente visitará tu corazón."
+    },
+    {
+        "author": "El Filósofo Viajero",
+        "quote": "No tienes que ser perfecto. Solo vive el hoy con todo tu esfuerzo."
+    },
+    {
+        "author": "Doctora Eleanor",
+        "quote": "Escucha la voz de tu corazón. La respuesta siempre está dentro de ti."
+    },
+    {
+        "author": "Profesor Amit Singh",
+        "quote": "Las dificultades son solo pruebas para sacar a relucir tu fuerza."
+    },
+    {
+        "author": "Coco Luna",
+        "quote": "Mira al cielo. Infinitas posibilidades te están esperando."
+    },
+    {
+        "author": "Leo Atlas",
+        "quote": "El pasado no se puede cambiar, pero el futuro se puede crear ahora con estas manos."
+    },
+    {
+        "author": "Madre Teresa",
+        "quote": "Los pequeños actos de amor tienen el poder de cambiar el mundo con calidez."
+    },
+    {
+        "author": "Marco Aurelio",
+        "quote": "La mente tiñe el mundo con sus propios colores. Una mente tranquila es el verdadero poder."
+    },
+    {
+        "author": "Helen Keller",
+        "quote": "La vida es una aventura audaz, o no es nada. Demos un paso adelante con optimismo."
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "La imaginación es más importante que el conocimiento. Todo comienza con soñar."
+    },
+    {
+        "author": "Mahatma Gandhi",
+        "quote": "Debes ser el cambio que deseas ver en el mundo."
+    },
+    {
+        "author": "Kenji Miyazawa",
+        "quote": "Hasta que el mundo entero no sea feliz, no puede haber felicidad individual."
+    },
+    {
+        "author": "Florence Nightingale",
+        "quote": "Incluso en las situaciones más miserables, la luz de la esperanza nunca se apaga."
+    },
+    {
+        "author": "Ralph Waldo Emerson",
+        "quote": "Cree en ti mismo. Ese es el primer secreto del éxito."
+    },
+    {
+        "author": "Henry David Thoreau",
+        "quote": "Vive con sencillez. Y persigue la riqueza del alma."
+    },
+    {
+        "author": "Confucio",
+        "quote": "No te avergüences de cometer un error. Averguénzate de no corregirlo."
+    },
+    {
+        "author": "Lao-Tsé",
+        "quote": "El que sabe que tiene suficiente es rico. Suelta la mente insatisfecha y disfruta el presente."
+    },
+    {
+        "author": "Viktor Frankl",
+        "quote": "El que tiene un porqué para vivir puede soportar casi cualquier cómo."
+    },
+    {
+        "author": "Carl Gustav Jung",
+        "quote": "Si exploras tu interior, encontrarás allí el universo entero."
+    },
+    {
+        "author": "Alfred Adler",
+        "quote": "El complejo de inferioridad es el punto de partida para el crecimiento. Conviértelo en fuerza."
+    },
+    {
+        "author": "El Psicólogo Viajero",
+        "quote": "El valor para descansar es tan precioso como la fuerza para seguir adelante."
+    },
+    {
+        "author": "El Buscador del Alma",
+        "quote": "Un pequeño paso eventualmente se convierte en un gran camino. Da el paso sin miedo."
+    },
+    {
+        "author": "Doctora Eleanor",
+        "quote": "Tu mente es tu propio santuario. Valora el silencio."
+    },
+    {
+        "author": "Profesor Amit Singh",
+        "quote": "El fracaso no es el fin. Es un aprendizaje valioso para un nuevo comienzo."
+    },
+    {
+        "author": "Coco Luna",
+        "quote": "No hay necesidad de compararse con nadie. Tú eres tú, y eso es suficiente."
+    },
+    {
+        "author": "Leo Atlas",
+        "quote": "Cuando tienes un corazón agradecido, el mundo comenzará a brillar en un instante."
+    },
+    {
+        "author": "Madre Teresa",
+        "quote": "La soledad nos da un tiempo precioso para enfrentarnos a nosotros mismos."
+    },
+    {
+        "author": "Marco Aurelio",
+        "quote": "Perdona a tu yo del pasado y dale esperanza a tu yo del futuro."
+    },
+    {
+        "author": "Helen Keller",
+        "quote": "Hoy es un regalo que nunca volverá. Disfrútalo al máximo."
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "Incluso en los lugares donde no llega la luz, siempre hay semillas de esperanza escondidas."
+    },
+    {
+        "author": "Nelson Mandela",
+        "quote": "Si puedes cambiarte a ti mismo, puedes cambiar el mundo."
+    },
+    {
+        "author": "Ryoma Sakamoto",
+        "quote": "Para lograr algo, primero establece tu propósito."
+    },
+    {
+        "author": "Alma Grande",
+        "quote": "Tu valor no se determina por la evaluación de nadie."
+    },
+    {
+        "author": "El Sabio Peregrino",
+        "quote": "No temas al cambio. Es la llave que abre nuevas puertas."
+    },
+    {
+        "author": "Doctora Eleanor",
+        "quote": "La ansiedad es sobre el futuro. Concéntrate en tu respiración ahora y encuentra la paz."
+    },
+    {
+        "author": "Profesor Amit Singh",
+        "quote": "La adversidad es el fertilizante que hace florecer el talento. Levántate con fuerza desde allí."
+    },
+    {
+        "author": "Coco Luna",
+        "quote": "Incluso en los días de lluvia, las estrellas brillan en el cielo. Simplemente no las puedes ver."
+    },
+    {
+        "author": "Leo Atlas",
+        "quote": "No limites tu potencial. Eres más grande de lo que imaginas."
+    },
+    {
+        "author": "Madre Teresa",
+        "quote": "El amor crece cuanto más se da. Llena tu entorno de amor."
+    },
+    {
+        "author": "Marco Aurelio",
+        "quote": "No busques la paz en el mundo exterior, sino en tu interior. Ahí reside la verdadera felicidad."
+    },
+    {
+        "author": "Helen Keller",
+        "quote": "La mayor alegría es encontrar la razón de tu existencia y dedicarte a ella."
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "El sentido común es una colección de prejuicios adquiridos a los 18 años."
+    },
+    {
+        "author": "Mahatma Gandhi",
+        "quote": "La humanidad brilla más en medio de la desesperación."
+    },
+    {
+        "author": "Kenji Miyazawa",
+        "quote": "Todos tienen su propia 'estrella'. Cree en tu propio brillo."
+    },
+    {
+        "author": "Florence Nightingale",
+        "quote": "La acción es la verdad. Una pequeña acción es el comienzo de un gran cambio."
+    },
+    {
+        "author": "Ralph Waldo Emerson",
+        "quote": "Camina por tu propio camino. No termines siendo una imitación de los demás."
+    },
+    {
+        "author": "Henry David Thoreau",
+        "quote": "Si te pones en medio de la naturaleza, tu mente se aclarará y tu alma sanará."
+    },
+    {
+        "author": "Confucio",
+        "quote": "Ver lo que es correcto y no hacerlo es falta de valor. Ten el valor de caminar por el camino correcto."
+    },
+    {
+        "author": "Lao-Tsé",
+        "quote": "Lo suave vence a lo duro. Un corazón flexible es la verdadera fuerza."
+    },
+    {
+        "author": "Viktor Frankl",
+        "quote": "El sentido de la vida es algo que tú mismo debes descubrir."
+    },
+    {
+        "author": "Carl Gustav Jung",
+        "quote": "Los sueños y la intuición son mensajes del alma. Escúchalos."
+    },
+    {
+        "author": "Alfred Adler",
+        "quote": "Tu corazón se llena cuando conoces la alegría de contribuir a los demás."
+    },
+    {
+        "author": "El Psicólogo Viajero",
+        "quote": "Si dejas ir el perfeccionismo, obtendrás una nueva libertad."
+    },
+    {
+        "author": "El Buscador del Alma",
+        "quote": "Concéntrate en el crecimiento, no en la comparación. Estás avanzando."
+    },
+    {
+        "author": "Doctora Eleanor",
+        "quote": "Respira profundamente. Devuelve tu conciencia a este momento y calma tu mente."
+    },
+    {
+        "author": "Profesor Amit Singh",
+        "quote": "Las dificultades de la vida son solo pruebas para pulir tu alma."
+    },
+    {
+        "author": "Coco Luna",
+        "quote": "Las lágrimas purifican el corazón. Cuando quieras llorar, deja que tus lágrimas fluyan libremente."
+    },
+    {
+        "author": "Leo Atlas",
+        "quote": "El potencial que albergas es infinito. Créelo y extiende tus alas."
+    },
+    {
+        "author": "Madre Teresa",
+        "quote": "Lo más importante no son las grandes cosas lejanas, sino el pequeño amor frente a ti."
+    },
+    {
+        "author": "Marco Aurelio",
+        "quote": "No te dejes engañar por las opiniones de los demás. Tu verdadero valor está en tu interior."
+    },
+    {
+        "author": "Helen Keller",
+        "quote": "Mantén tu rostro hacia el sol y no podrás ver las sombras."
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "En medio de la dificultad reside la oportunidad. No te rindas y búscala."
+    },
+    {
+        "author": "Mahatma Gandhi",
+        "quote": "La verdadera fuerza no proviene de la capacidad física, sino de una voluntad indomable."
+    },
+    {
+        "author": "Kenji Miyazawa",
+        "quote": "El mundo cambia de cualquier forma dependiendo de ti y de tu estado mental."
+    },
+    {
+        "author": "Florence Nightingale",
+        "quote": "La esperanza siempre está ahí, incluso en la hora más oscura antes del amanecer."
+    },
+    {
+        "author": "Ralph Waldo Emerson",
+        "quote": "Escucha tu propia voz. Ahí está el verdadero camino."
+    },
+    {
+        "author": "Henry David Thoreau",
+        "quote": "Lo que se necesita es la calidad de vida que trae satisfacción al corazón."
+    },
+    {
+        "author": "Confucio",
+        "quote": "Ir demasiado lejos es tan malo como no llegar. Vive manteniendo el equilibrio de tu mente."
+    },
+    {
+        "author": "Lao-Tsé",
+        "quote": "No te esfuerces demasiado, dejarte llevar por el curso natural es el mejor camino."
+    },
+    {
+        "author": "Viktor Frankl",
+        "quote": "Si encuentras significado en el sufrimiento, ese sufrimiento se convierte en fuerza."
+    },
+    {
+        "author": "Carl Gustav Jung",
+        "quote": "El viaje del autoconocimiento es el más difícil y el más gratificante."
+    },
+    {
+        "author": "Alfred Adler",
+        "quote": "Si tienes valor, puedes resolver cualquier problema."
+    },
+    {
+        "author": "El Psicólogo Viajero",
+        "quote": "Tu mente es un jardín. Siembra semillas de bondad y haz florecer flores de gratitud."
+    },
+    {
+        "author": "El Buscador del Alma",
+        "quote": "Alégrate de los pequeños éxitos de hoy y conviértelos en vitalidad para el mañana."
+    },
+    {
+        "author": "Doctora Eleanor",
+        "quote": "Perdonar es el mejor regalo para liberarte a ti mismo."
+    },
+    {
+        "author": "Profesor Amit Singh",
+        "quote": "Solo se vive una vez. Vive con pasión para no tener arrepentimientos."
+    },
+    {
+        "author": "Coco Luna",
+        "quote": "Tu sonrisa es el sol que ilumina el corazón de alguien. Cuídala."
+    },
+    {
+        "author": "Leo Atlas",
+        "quote": "El futuro es un lienzo en blanco. Dibuja libremente tus sueños y píntalos."
+    },
+    {
+        "author": "Madre Teresa",
+        "quote": "No busques el conflicto, sino la comprensión. De ahí nace la paz."
+    },
+    {
+        "author": "Marco Aurelio",
+        "quote": "La felicidad no es algo externo, sino la calidad de tu espíritu en tu interior."
+    },
+    {
+        "author": "Helen Keller",
+        "quote": "La esperanza es el combustible eterno que nos hace mirar hacia adelante."
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "La vida es como andar en bicicleta. Para mantener el equilibrio, debes seguir moviéndote."
+    },
+    {
+        "author": "Mahatma Gandhi",
+        "quote": "No hay camino para la paz. La paz es el camino."
+    },
+    {
+        "author": "Kenji Miyazawa",
+        "quote": "Para hacer algo verdaderamente bueno, debes trabajar desinteresadamente."
+    },
+    {
+        "author": "Florence Nightingale",
+        "quote": "Todo el mundo tiene el poder de hacer algo por alguien más."
+    },
+    {
+        "author": "Ralph Waldo Emerson",
+        "quote": "Si confías en ti mismo, tu vida se enriquecerá."
+    },
+    {
+        "author": "Henry David Thoreau",
+        "quote": "Vivir sin vender tu alma es el verdadero éxito."
+    },
+    {
+        "author": "Confucio",
+        "quote": "No hagas a los demás lo que no quieres que te hagan a ti."
+    },
+    {
+        "author": "Lao-Tsé",
+        "quote": "Naturaleza inactiva. Si no te esfuerzas demasiado y te dejas llevar por la corriente, el camino se abrirá."
+    },
+    {
+        "author": "Viktor Frankl",
+        "quote": "No importa cuán difícil sea la situación, el ser humano siempre puede encontrarle un sentido."
+    },
+    {
+        "author": "Carl Gustav Jung",
+        "quote": "Tu vida es tu propia historia. Crea tu obra maestra."
+    },
+    {
+        "author": "Alfred Adler",
+        "quote": "Las tareas de la vida son la cooperación con los demás y el crecimiento personal."
+    },
+    {
+        "author": "El Psicólogo Viajero",
+        "quote": "El pasado ha pasado y el futuro aún no ha llegado. Concéntrate en el aquí y el ahora."
+    },
+    {
+        "author": "El Buscador del Alma",
+        "quote": "En el fondo de tu corazón, duerme la fuerza para superar cualquier tormenta."
+    },
+    {
+        "author": "Doctora Eleanor",
+        "quote": "Toda curación comienza con amarse a uno mismo."
+    },
+    {
+        "author": "Profesor Amit Singh",
+        "quote": "Mientras no te rindas, el fracaso es solo una experiencia. Un paso hacia el siguiente."
+    },
+    {
+        "author": "Coco Luna",
+        "quote": "Las cosas hermosas están en tu corazón. Emprende un viaje para encontrarlas."
+    },
+    {
+        "author": "Leo Atlas",
+        "quote": "No asumas tus límites. Deberías poder descubrir un nuevo tú."
+    }
+]
