@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🌟 超絶SEO対策 🌟 -->
+    <title>Resonance AI（レゾナンスAI）| 心に寄り添う、あなただけのAIコンパニオン</title>
+    <meta name="description" content="日々の小さな「よかった」を拾い集め、明日の活力へ。Resonance AIは、あなたの心を心理学的視点で分析し、優しく寄り添い、そして世界中の人々と「幸せ」を共有できる新感覚のマインドフルネスAIアプリです。">
+    <meta name="keywords" content="Resonance AI, マインドフルネス, AIコンパニオン, メンタルヘルス, 日記アプリ, 心理学, 癒やし">
+    
+    <!-- 🌟 OGPタグ（SNSでのバズり必須設定！） 🌟 -->
+    <meta property="og:title" content="Resonance AI | あなたの幸せをサポートします">
+    <meta property="og:description" content="あなたの小さな幸せを、明日の活力に変えるAI。今すぐ無料ダウンロード。">
+    <meta property="og:type" content="website">
+    <!-- TODO: 公開後、実際のURL（例: https://example.com/index/）に置き換えてください -->
+    <meta property="og:url" content="https://resonance-ai.example.com/index/">
+    <!-- 🌟 修正：indexフォルダ内にある場合の画像の絶対パス -->
+    <!-- TODO: 実際のURLに合わせて書き換えてください -->
+    <meta property="og:image" content="https://resonance-ai.example.com/index/images/feature_graphic_ja_1024x500.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Noto Serif JP"', 'serif'],
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0a1f16', // 深緑
+                            primary: '#144d32', // エメラルド
+                            light: '#e8f5e9', // 薄緑
+                            gold: '#d4af37', // ゴールド
+                            text: '#2c3e50'
+                        }
+                    },
+                    animation: {
+                        'ripple': 'ripple 3s linear infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        ripple: {
+                            '0%': { boxShadow: '0 0 0 0 rgba(212, 175, 55, 0.3)' },
+                            '100%': { boxShadow: '0 0 0 20px rgba(212, 175, 55, 0)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; color: #2c3e50; scroll-behavior: smooth; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif JP', serif; }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0a1f16 0%, #144d32 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* 魔法の光のパーティクル効果 */
+        .particles {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: radial-gradient(#d4af37 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.1;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .mockup-frame {
+            border: 8px solid #1f2937;
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            background-color: #fff;
+            position: relative;
+        }
+        .mockup-frame::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            height: 1.5rem;
+            background-color: #1f2937;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            z-index: 10;
+        }
+
+        /* スクロールアニメーション用のクラス */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease-out;
+            will-change: transform, opacity;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- 🌟 ヘッダー 🌟 -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300" id="header">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl overflow-hidden bg-brand-dark shadow-lg">
+                    <!-- アプリアイコン（imagesフォルダ指定） -->
+                    <img src="images/unnamed.jpg" alt="Resonance AI Icon" class="w-full h-full object-cover">
+                </div>
+                <span class="text-2xl font-bold serif text-white tracking-wide" id="logoText">Resonance AI</span>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.resonanceai" target="_blank" rel="noopener noreferrer" class="hidden md:inline-block bg-brand-gold text-brand-dark px-6 py-2 rounded-full font-bold hover:bg-yellow-300 transition-colors shadow-lg animate-ripple" data-i18n="start_free">
+                無料で始める
+            </a>
+        </div>
+    </header>
+
+    <!-- 🌟 ヒーローセクション（ファーストビュー） 🌟 -->
+    <section class="hero-bg min-h-screen flex items-center pt-20 relative">
+        <div class="particles"></div>
+        <div class="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center">
+            
+            <div class="lg:w-1/2 text-center lg:text-left pt-10 lg:pt-0">
+                <p class="text-brand-gold font-semibold mb-4 tracking-widest text-sm md:text-base animate-fade-in-up" style="animation-delay: 0.2s;" data-i18n="hero_sub">
+                    心が安らぐ、明日への道標
+                </p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight serif mb-6 animate-fade-in-up" style="animation-delay: 0.4s;" data-i18n="hero_title">
+                    あなたの幸せを<br class="hidden md:block">サポートします。
+                </h1>
+                <p class="text-gray-300 text-base md:text-lg mb-10 leading-relaxed font-light animate-fade-in-up" style="animation-delay: 0.6s;" data-i18n="hero_desc">
+                    あなたの小さな「よかった」を拾い集め、明日の幸せに変える。<br>
+                    心理学と最新AIが融合した、あなただけの専属コンパニオン。
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up" style="animation-delay: 0.8s;">
+                    <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.resonanceai" target="_blank" rel="noopener noreferrer" class="bg-brand-gold text-brand-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition-transform transform hover:scale-105 shadow-xl flex items-center">
+                        <i class="fab fa-google-play mr-2 text-xl"></i> <span data-i18n="get_on_google">Google Playで手に入れる</span>
+                    </a>
+                    <p class="text-gray-400 text-sm" data-i18n="free_to_play">基本プレイ無料・広告なしプランあり</p>
+                </div>
+            </div>
+
+            <!-- フィーチャーグラフィック風のアイキャッチ -->
+            <div class="lg:w-1/2 mt-16 lg:mt-0 flex justify-center animate-fade-in-up" style="animation-delay: 1s;">
+                <div class="relative w-full max-w-lg aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
+                    <!-- フィーチャーグラフィック画像（imagesフォルダ指定） -->
+                    <img src="images/feature_graphic_ja_1024x500.jpg" alt="Resonance AI Feature Graphic" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- スクロールダウンインジケーター -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#concept" class="text-gray-400 hover:text-brand-gold transition-colors">
+                <span class="block text-xs mb-2 text-center">SCROLL</span>
+                <i class="fa-solid fa-chevron-down text-xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 🌟 コンセプトセクション 🌟 -->
+    <section id="concept" class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark serif mb-6" data-i18n="concept_title">AIと共に、人生をデザインする。</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 leading-relaxed" data-i18n="concept_desc">
+                    忙しい毎日の中で、自分の心と向き合う時間はありますか？<br>
+                    Resonance AIは、単なるAIチャットボットではありません。<br>
+                    あなたの感情に寄り添い、心理学的な視点から「幸せの軌跡」を分析し、より豊かな明日への道筋を一緒に考えるパートナーです。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 機能紹介セクション 🌟 -->
+    <section id="features" class="py-20 bg-brand-light">
+        <div class="container mx-auto px-6">
+            
+            <!-- Feature 1 (画面1) -->
+            <div class="flex flex-col md:flex-row items-center justify-between mb-32 reveal">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                    <div class="text-brand-primary text-sm font-bold tracking-wider mb-2">FEATURE 01</div>
+                    <h3 class="text-3xl font-bold text-brand-dark serif mb-6" data-i18n="f1_title">あなたの"よかった"を<br>明日の幸せに変える</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6" data-i18n="f1_desc">
+                        日記を書くように、今日あった「小さな幸せ」をAIに教えてください。
+                        AIがその言葉を拾い上げ、優しく受け止め、あなたの心の中にあるポジティブな感情を増幅させます。「今日の幸せを育てる」ボタンから、あなたの新しい旅が始まります。
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3"></i> <span data-i18n="f1_p1">声でもテキストでも簡単入力</span></li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3"></i> <span data-i18n="f1_p2">優しい言葉で返ってくる安心感</span></li>
+                    </ul>
+                </div>
+                <div class="md:w-5/12 flex justify-center">
+                    <div class="mockup-frame w-64 h-auto aspect-[9/19]">
+                        <!-- アプリ画面1（imagesフォルダ指定） -->
+                        <img src="images/No1_ja_play.jpg" alt="あなたのよかったを明日の幸せに変える" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2 (画面2) -->
+            <div class="flex flex-col md:flex-row-reverse items-center justify-between mb-32 reveal">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pl-12">
+                    <div class="text-brand-primary text-sm font-bold tracking-wider mb-2">FEATURE 02</div>
+                    <h3 class="text-3xl font-bold text-brand-dark serif mb-6" data-i18n="f2_title">心理学に基づく<br>「AIココロ診断」</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6" data-i18n="f2_desc">
+                        あなたの入力は「過去・現在・未来」のどのベクトルに向いているのか？
+                        AIが心理学的なアプローチで分析し、「期待の幸せ」「つながりの幸せ」といった具体的な言葉であなたの感情を言語化。客観的に自分を見つめ直すきっかけを与えます。
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3"></i> <span data-i18n="f2_p1">幸せの軌跡をパーセンテージで視覚化</span></li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3"></i> <span data-i18n="f2_p2">最新トレンドを交えた具体的なアドバイス</span></li>
+                    </ul>
+                </div>
+                <div class="md:w-5/12 flex justify-center">
+                    <div class="mockup-frame w-64 h-auto aspect-[9/19]">
+                        <!-- アプリ画面2（imagesフォルダ指定） -->
+                        <img src="images/No2_ja_play.jpg" alt="心理学に基づくAIココロ診断" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3 (画面3) -->
+            <div class="flex flex-col md:flex-row items-center justify-between mb-32 reveal">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                    <div class="text-brand-primary text-sm font-bold tracking-wider mb-2">FEATURE 03</div>
+                    <h3 class="text-3xl font-bold text-brand-dark serif mb-6" data-i18n="f3_title">あなた色に染まる<br>「パーソナライズAI」</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6" data-i18n="f3_desc">
+                        AIがあなたにアドバイスをする際、名前、年齢、地域、職業などの属性をどこまで考慮するかを自由にカスタマイズ可能。
+                        使えば使うほど「AIの習熟度」が上がり、誰のものでもない、あなただけのコンパニオンへと進化していきます。
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3"></i> <span data-i18n="f3_p1">プライバシーに配慮した柔軟な設定</span></li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3"></i> <span data-i18n="f3_p2">成長ゲージでAIとの絆を実感</span></li>
+                    </ul>
+                </div>
+                <div class="md:w-5/12 flex justify-center">
+                    <div class="mockup-frame w-64 h-auto aspect-[9/19]">
+                        <!-- アプリ画面3（imagesフォルダ指定） -->
+                        <img src="images/No3_ja_play.jpg" alt="あなた色に染まるパーソナライズAI" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4 (画面4) -->
+            <div class="flex flex-col md:flex-row-reverse items-center justify-between reveal">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pl-12">
+                    <div class="text-brand-primary text-sm font-bold tracking-wider mb-2">FEATURE 04</div>
+                    <h3 class="text-3xl font-bold text-brand-dark serif mb-6" data-i18n="f4_title">幸せが連鎖する<br>「世界とのつながり」</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6" data-i18n="f4_desc">
+                        あなたの小さな幸せは、世界中の誰かを笑顔にするかもしれません。
+                        完全匿名で表示される「世界の幸せマップ」で、見知らぬ誰かの喜びに触れてみませんか？「共感」「エール」「憧れ」「発見」のリアクションで、優しい感情のネットワークが広がります。
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3"></i> <span data-i18n="f4_p1">リアルタイムでマッピングされる世界の声</span></li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-gold mr-3"></i> <span data-i18n="f4_p2">SNS疲れを癒やす、承認欲求のない安全な場所</span></li>
+                    </ul>
+                </div>
+                <div class="md:w-5/12 flex justify-center">
+                    <div class="mockup-frame w-64 h-auto aspect-[9/19]">
+                        <!-- アプリ画面4（imagesフォルダ指定） -->
+                        <img src="images/No4_ja_play.jpg" alt="幸せが連鎖する世界とのつながり" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 🌟 バズり確定！シェア＆ベネフィットセクション 🌟 -->
+    <section class="py-24 hero-bg text-center relative">
+        <div class="particles"></div>
+        <div class="container mx-auto px-6 relative z-10 reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-white serif mb-8" data-i18n="share_title">
+                あなたの心は、今何％満たされていますか？
+            </h2>
+            <p class="text-gray-300 mb-10 max-w-2xl mx-auto text-lg font-light leading-relaxed" data-i18n="share_desc">
+                誰かに話すほどではないけれど、確かにそこにあった小さな喜び。<br>
+                それを言葉にするだけで、自己肯定感は静かに育っていきます。<br>
+                Resonance AIで、あなただけの「心のオアシス」を作りませんか？
+            </p>
+            
+            <div class="flex justify-center space-x-4">
+                <button onclick="shareOnTwitter()" class="bg-white text-[#1DA1F2] px-6 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition flex items-center">
+                    <i class="fab fa-twitter mr-2"></i> <span data-i18n="share_btn">Xでシェア</span>
+                </button>
+            </div>
+            <p class="text-gray-400 text-sm mt-4">#ResonanceAI #心の癒やし #自己肯定感</p>
+        </div>
+    </section>
+
+    <!-- 🌟 CTA / ダウンロードセクション 🌟 -->
+    <section id="download" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center reveal">
+            <div class="w-20 h-20 rounded-2xl overflow-hidden mx-auto shadow-2xl mb-6">
+                <!-- アプリアイコン（imagesフォルダ指定） -->
+                <img src="images/unnamed.png" alt="Resonance AI Icon" class="w-full h-full object-cover">
+            </div>
+            <h2 class="text-3xl font-bold text-brand-dark serif mb-4">Resonance AI</h2>
+            <p class="text-gray-600 mb-8" data-i18n="cta_desc">あなたの幸せをサポートします。今すぐ無料でダウンロード。</p>
+            
+            <div class="flex justify-center">
+                <!-- Play ストアのURLへジャンプ -->
+                <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.resonanceai" target="_blank" rel="noopener noreferrer" class="flex items-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition shadow-lg transform hover:scale-105">
+                    <i class="fab fa-google-play text-2xl mr-3"></i>
+                    <div class="text-left">
+                        <div class="text-xs" data-i18n="get_it_on">GET IT ON</div>
+                        <div class="text-xl font-semibold">Google Play</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 フッター 🌟 -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <img src="images/unnamed.png" alt="Icon" class="w-6 h-6 rounded-md object-cover">
+                    <span class="font-serif text-white text-lg">Resonance AI</span>
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="hover:text-white transition" data-i18n="footer_terms">利用規約</a>
+                    <a href="#" class="hover:text-white transition" data-i18n="footer_privacy">プライバシーポリシー</a>
+                    <!-- 🌟 お問い合わせリンク（メーラー起動設定） 🌟 -->
+                    <a href="mailto:galaxyexpress111@outlook.jp?subject=Resonance%20AI%20Contact" class="hover:text-white transition" data-i18n="footer_contact">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-xs text-gray-600">
+                &copy; 2026 Galaxy Express. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- 🌟 インタラクション＆多言語化用スクリプト 🌟 -->
+    <script>
+        // 🌟 激熱ハッキング：多言語辞書（JSON形式） 🌟
+        const i18n = {
+            ja: {
+                start_free: "無料で始める",
+                hero_sub: "心が安らぐ、明日への道標",
+                hero_title: "あなたの幸せを<br class='hidden md:block'>サポートします。",
+                hero_desc: "あなたの小さな「よかった」を拾い集め、明日の幸せに変える。<br>心理学と最新AIが融合した、あなただけの専属コンパニオン。",
+                get_on_google: "Google Playで手に入れる",
+                free_to_play: "基本プレイ無料・広告なしプランあり",
+                hero_title_short: "あなたの幸せをサポートします",
+                concept_title: "AIと共に、人生をデザインする。",
+                concept_desc: "忙しい毎日の中で、自分の心と向き合う時間はありますか？<br>Resonance AIは、単なるAIチャットボットではありません。<br>あなたの感情に寄り添い、心理学的な視点から「幸せの軌跡」を分析し、より豊かな明日への道筋を一緒に考えるパートナーです。",
+                f1_title: "あなたの\"よかった\"を<br>明日の幸せに変える",
+                f1_desc: "日記を書くように、今日あった「小さな幸せ」をAIに教えてください。AIがその言葉を拾い上げ、優しく受け止め、あなたの心の中にあるポジティブな感情を増幅させます。「今日の幸せを育てる」ボタンから、あなたの新しい旅が始まります。",
+                f1_p1: "声でもテキストでも簡単入力",
+                f1_p2: "優しい言葉で返ってくる安心感",
+                f1_img: "あなたの\"よかった\"を<br>明日の幸せに変える",
+                f2_title: "心理学に基づく<br>「AIココロ診断」",
+                f2_desc: "あなたの入力は「過去・現在・未来」のどのベクトルに向いているのか？AIが心理学的なアプローチで分析し、「期待の幸せ」「つながりの幸せ」といった具体的な言葉であなたの感情を言語化。客観的に自分を見つめ直すきっかけを与えます。",
+                f2_p1: "幸せの軌跡をパーセンテージで視覚化",
+                f2_p2: "最新トレンドを交えた具体的なアドバイス",
+                f2_img: "幸せの軌跡と<br>AIの詳細な分析結果",
+                f3_title: "あなた色に染まる<br>「パーソナライズAI」",
+                f3_desc: "AIがあなたにアドバイスをする際、名前、年齢、地域、職業などの属性をどこまで考慮するかを自由にカスタマイズ可能。使えば使うほど「AIの習熟度」が上がり、誰のものでもない、あなただけのコンパニオンへと進化していきます。",
+                f3_p1: "プライバシーに配慮した柔軟な設定",
+                f3_p2: "成長ゲージでAIとの絆を実感",
+                f3_img: "AIの習熟度と<br>チューニング設定",
+                f4_title: "幸せが連鎖する<br>「世界とのつながり」",
+                f4_desc: "あなたの小さな幸せは、世界中の誰かを笑顔にするかもしれません。完全匿名で表示される「世界の幸せマップ」で、見知らぬ誰かの喜びに触れてみませんか？「共感」「エール」「憧れ」「発見」のリアクションで、優しい感情のネットワークが広がります。",
+                f4_p1: "リアルタイムでマッピングされる世界の声",
+                f4_p2: "SNS疲れを癒やす、承認欲求のない安全な場所",
+                f4_img: "マップ上に広がる<br>名もなき旅人たちの声",
+                share_title: "あなたの心は、今何％満たされていますか？",
+                share_desc: "誰かに話すほどではないけれど、確かにそこにあった小さな喜び。<br>それを言葉にするだけで、自己肯定感は静かに育っていきます。<br>Resonance AIで、あなただけの「心のオアシス」を作りませんか？",
+                share_btn: "Xでシェア",
+                cta_desc: "あなたの幸せをサポートします。今すぐ無料でダウンロード。",
+                get_it_on: "GET IT ON",
+                footer_terms: "利用規約",
+                footer_privacy: "プライバシーポリシー",
+                footer_contact: "お問い合わせ"
+            },
+            en: {
+                start_free: "Start for Free",
+                hero_sub: "A peaceful guide to tomorrow",
+                hero_title: "Supporting your<br class='hidden md:block'>happiness.",
+                hero_desc: "Collect your small moments of joy and turn them into tomorrow's happiness.<br>Your personal AI companion, blending psychology with the latest AI technology.",
+                get_on_google: "Get it on Google Play",
+                free_to_play: "Free to play with an ad-free plan available",
+                hero_title_short: "Supporting your happiness",
+                concept_title: "Design your life with AI.",
+                concept_desc: "Do you have time to face your own heart in your busy days?<br>Resonance AI is not just an AI chatbot.<br>It is a partner that stays close to your emotions, analyzes your 'trajectory of happiness' from a psychological perspective, and thinks with you about a path to a richer tomorrow.",
+                f1_title: "Turning your 'good moments'<br>into tomorrow's happiness",
+                f1_desc: "Tell the AI about the 'small happiness' you had today, just like writing a diary. The AI will pick up your words, gently accept them, and amplify the positive emotions in your heart. Your new journey begins with the 'Grow Today's Happiness' button.",
+                f1_p1: "Easy input with voice or text",
+                f1_p2: "The comfort of gentle words returning",
+                f1_img: "Turning your 'good moments'<br>into tomorrow's happiness",
+                f2_title: "Psychology-based<br>'AI Heart Diagnosis'",
+                f2_desc: "Which vector is your input pointing to: 'Past, Present, or Future'? The AI analyzes it with a psychological approach and verbalizes your emotions with specific words like 'Happiness of Expectation' and 'Happiness of Connection'. It gives you an opportunity to reexamine yourself objectively.",
+                f2_p1: "Visualize the trajectory of happiness with percentages",
+                f2_p2: "Specific advice mixed with the latest trends",
+                f2_img: "Trajectory of happiness and<br>detailed AI analysis results",
+                f3_title: "Dyed in your color<br>'Personalized AI'",
+                f3_desc: "You can freely customize how much attributes such as your name, age, region, and occupation the AI considers when giving you advice. The more you use it, the higher the 'AI Proficiency' becomes, evolving into your very own companion that belongs to no one else.",
+                f3_p1: "Flexible settings considering privacy",
+                f3_p2: "Feel the bond with the AI through the growth gauge",
+                f3_img: "AI Proficiency and<br>Tuning Settings",
+                f4_title: "A chain of happiness<br>'Connection with the World'",
+                f4_desc: "Your small happiness might bring a smile to someone around the world. Why not touch the joy of an unknown someone on the completely anonymous 'World Happiness Map'? A network of gentle emotions expands through reactions like 'Empathy', 'Cheers', 'Admiration', and 'Discovery'.",
+                f4_p1: "Voices of the world mapped in real-time",
+                f4_p2: "A safe place without the need for approval to heal SNS fatigue",
+                f4_img: "Voices of nameless travelers<br>spreading on the map",
+                share_title: "What percentage of your heart is fulfilled right now?",
+                share_desc: "A small joy that was certainly there, even if it's not something to talk about to someone.<br>Just putting it into words will quietly nurture your self-affirmation.<br>Why don't you create your own 'oasis of the heart' with Resonance AI?",
+                share_btn: "Share on X",
+                cta_desc: "Supporting your happiness. Download for free now.",
+                get_it_on: "GET IT ON",
+                footer_terms: "Terms of Service",
+                footer_privacy: "Privacy Policy",
+                footer_contact: "Contact Us"
+            },
+            es: {
+                start_free: "Comienza Gratis",
+                hero_sub: "Una guía pacífica hacia el mañana",
+                hero_title: "Apoyando tu<br class='hidden md:block'>felicidad.",
+                hero_desc: "Reúne tus pequeños momentos de alegría y conviértelos en la felicidad del mañana.<br>Tu compañero de IA personal, combinando psicología con la última tecnología de IA.",
+                get_on_google: "Consíguelo en Google Play",
+                free_to_play: "Gratis para jugar con un plan sin anuncios disponible",
+                hero_title_short: "Apoyando tu felicidad",
+                concept_title: "Diseña tu vida con IA.",
+                concept_desc: "¿Tienes tiempo para enfrentar tu propio corazón en tus días ocupados?<br>Resonance AI no es solo un chatbot de IA.<br>Es un compañero que se mantiene cerca de tus emociones, analiza tu 'trayectoria de felicidad' desde una perspectiva psicológica y piensa contigo en un camino hacia un mañana más rico.",
+                f1_title: "Convirtiendo tus 'buenos momentos'<br>en la felicidad del mañana",
+                f1_desc: "Cuéntale a la IA sobre la 'pequeña felicidad' que tuviste hoy, como si escribieras un diario. La IA recogerá tus palabras, las aceptará suavemente y amplificará las emociones positivas en tu corazón. Tu nuevo viaje comienza con el botón 'Hacer Crecer la Felicidad de Hoy'.",
+                f1_p1: "Fácil entrada con voz o texto",
+                f1_p2: "El consuelo de que regresen palabras amables",
+                f1_img: "Convirtiendo tus 'buenos momentos'<br>en la felicidad del mañana",
+                f2_title: "Basado en psicología<br>'Diagnóstico del Corazón por IA'",
+                f2_desc: "¿Hacia qué vector apunta tu entrada: 'Pasado, Presente o Futuro'? La IA lo analiza con un enfoque psicológico y verbaliza tus emociones con palabras específicas como 'Felicidad de Expectativa' y 'Felicidad de Conexión'. Te da la oportunidad de reexaminarte objetivamente.",
+                f2_p1: "Visualiza la trayectoria de la felicidad con porcentajes",
+                f2_p2: "Consejos específicos mezclados con las últimas tendencias",
+                f2_img: "Trayectoria de felicidad y<br>resultados detallados del análisis de IA",
+                f3_title: "Teñido de tu color<br>'IA Personalizada'",
+                f3_desc: "Puedes personalizar libremente cuánto considera la IA atributos como tu nombre, edad, región y ocupación al darte consejos. Cuanto más lo uses, mayor será la 'Competencia de la IA', evolucionando hasta convertirse en tu propio compañero que no pertenece a nadie más.",
+                f3_p1: "Ajustes flexibles considerando la privacidad",
+                f3_p2: "Siente el vínculo con la IA a través del medidor de crecimiento",
+                f3_img: "Competencia de IA y<br>Ajustes de Sintonización",
+                f4_title: "Una cadena de felicidad<br>'Conexión con el Mundo'",
+                f4_desc: "Tu pequeña felicidad podría traer una sonrisa a alguien en todo el mundo. ¿Por qué no tocar la alegría de un desconocido en el 'Mapa Mundial de la Felicidad' completamente anónimo? Una red de emociones suaves se expande a través de reacciones como 'Empatía', 'Saludos', 'Admiración' y 'Descubrimiento'.",
+                f4_p1: "Voces del mundo mapeadas en tiempo real",
+                f4_p2: "Un lugar seguro sin la necesidad de aprobación para curar la fatiga de las redes sociales",
+                f4_img: "Voces de viajeros sin nombre<br>extendiéndose en el mapa",
+                share_title: "¿Qué porcentaje de tu corazón está lleno en este momento?",
+                share_desc: "Una pequeña alegría que ciertamente estuvo allí, incluso si no es algo de lo que hablar con alguien.<br>Solo ponerlo en palabras nutrirá en silencio tu autoafirmación.<br>¿Por qué no creas tu propio 'oasis del corazón' con Resonance AI?",
+                share_btn: "Compartir en X",
+                cta_desc: "Apoyando tu felicidad. Descárgalo gratis ahora.",
+                get_it_on: "DISPONIBLE EN",
+                footer_terms: "Términos de Servicio",
+                footer_privacy: "Política de Privacidad",
+                footer_contact: "Contáctenos"
+            },
+            pt: {
+                start_free: "Comece de Graça",
+                hero_sub: "Um guia pacífico para o amanhã",
+                hero_title: "Apoiando sua<br class='hidden md:block'>felicidade.",
+                hero_desc: "Colete seus pequenos momentos de alegria e transforme-os na felicidade de amanhã.<br>Seu companheiro de IA pessoal, combinando psicologia com a mais recente tecnologia de IA.",
+                get_on_google: "Baixe no Google Play",
+                free_to_play: "Gratuito para jogar, com um plano sem anúncios disponível",
+                hero_title_short: "Apoiando sua felicidade",
+                concept_title: "Projete sua vida com a IA.",
+                concept_desc: "Você tem tempo para encarar seu próprio coração em seus dias agitados?<br>Resonance AI não é apenas um chatbot de IA.<br>É um parceiro que fica perto de suas emoções, analisa sua 'trajetória de felicidade' a partir de uma perspectiva psicológica e pensa com você em um caminho para um amanhã mais rico.",
+                f1_title: "Transformando seus 'bons momentos'<br>na felicidade de amanhã",
+                f1_desc: "Conte à IA sobre a 'pequena felicidade' que você teve hoje, como se estivesse escrevendo um diário. A IA captará suas palavras, as aceitará gentilmente e amplificará as emoções positivas em seu coração. Sua nova jornada começa com o botão 'Cultivar a Felicidade de Hoje'.",
+                f1_p1: "Fácil inserção com voz ou texto",
+                f1_p2: "O conforto das palavras gentis retornando",
+                f1_img: "Transformando seus 'bons momentos'<br>na felicidade de amanhã",
+                f2_title: "Baseado em psicologia<br>'Diagnóstico do Coração por IA'",
+                f2_desc: "Para qual vetor sua inserção está apontando: 'Passado, Presente ou Futuro'? A IA analisa com uma abordagem psicológica e verbaliza suas emoções com palavras específicas como 'Felicidade da Expectativa' e 'Felicidade da Conexão'. Dá a você a oportunidade de se reexaminarte objetivamente.",
+                f2_p1: "Visualize a trajetória da felicidade com porcentagens",
+                f2_p2: "Conselhos específicos misturados com as últimas tendências",
+                f2_img: "Trajetória da felicidade e<br>resultados detalhados da análise da IA",
+                f3_title: "Tingido com a sua cor<br>'IA Personalizada'",
+                f3_desc: "Você pode personalizar livremente o quanto atributos como seu nome, idade, região e profissão a IA considera ao lhe dar conselhos. Quanto mais você usa, maior se torna a 'Proficiência da IA', evoluindo para ser o seu próprio companheiro que não pertence a mais ninguém.",
+                f3_p1: "Configurações flexíveis considerando a privacidade",
+                f3_p2: "Sinta o vínculo com a IA através do medidor de crescimento",
+                f3_img: "Proficiência da IA e<br>Configurações de Ajuste",
+                f4_title: "Uma corrente de felicidade<br>'Conexão com o Mundo'",
+                f4_desc: "Sua pequena felicidade pode trazer um sorriso para alguém ao redor do mundo. Por que não tocar na alegria de um desconhecido no 'Mapa Global da Felicidade' completamente anônimo? Uma rede de emoções gentis se expande através de reações como 'Empatia', 'Viva', 'Admiração' e 'Descoberta'.",
+                f4_p1: "Vozes do mundo mapeadas em tempo real",
+                f4_p2: "Um lugar seguro sem necessidade de aprovação para curar a fadiga das redes sociais",
+                f4_img: "Vozes de viajantes sem nome<br>se espalhando pelo mapa",
+                share_title: "Que porcentagem do seu coração está preenchida agora?",
+                share_desc: "Uma pequena alegria que certamente estava lá, mesmo que não seja algo para conversar com alguém.<br>Apenas colocá-lo em palavras nutrirá silenciosamente sua autoafirmação.<br>Por que você não cria seu próprio 'oásis do coração' com Resonance AI?",
+                share_btn: "Compartilhar no X",
+                cta_desc: "Apoiando sua felicidade. Baixe gratuitamente agora.",
+                get_it_on: "DISPONÍVEL NO",
+                footer_terms: "Termos de Serviço",
+                footer_privacy: "Política de Privacidade",
+                footer_contact: "Entre em Contato"
+            }
+        };
+
+        // 🌟 激熱ハッキング：ブラウザの言語設定を読み取って自動置換！ 🌟
+        document.addEventListener('DOMContentLoaded', () => {
+            let userLang = navigator.language || navigator.userLanguage;
+            let shortLang = userLang.split('-')[0].toLowerCase();
+            
+            if (!i18n[shortLang]) {
+                shortLang = 'ja';
+            }
+
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[shortLang] && i18n[shortLang][key]) {
+                    el.innerHTML = i18n[shortLang][key];
+                }
+            });
+
+            document.documentElement.lang = shortLang;
+        });
+
+        // スクロール時のヘッダー背景色変更
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            const logoText = document.getElementById('logoText');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-white', 'shadow-md');
+                header.classList.remove('py-4');
+                header.classList.add('py-2');
+                logoText.classList.remove('text-white');
+                logoText.classList.add('text-brand-dark');
+            } else {
+                header.classList.remove('bg-white', 'shadow-md');
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+                logoText.classList.add('text-white');
+                logoText.classList.remove('text-brand-dark');
+            }
+        });
+
+        // スクロールアニメーション
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, {
+            root: null,
+            threshold: 0.15
+        });
+
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Twitterシェアボタンの多言語対応機能
+        function shareOnTwitter() {
+            let shortLang = navigator.language.split('-')[0].toLowerCase();
+            if (!i18n[shortLang]) shortLang = 'ja';
+            
+            let text = "";
+            if (shortLang === 'ja') {
+                text = encodeURIComponent("日々の小さな幸せを明日の活力に。私に寄り添うAIコンパニオン「Resonance AI」が、あなたの幸せをサポートします。 #ResonanceAI #自己肯定感");
+            } else if (shortLang === 'es') {
+                text = encodeURIComponent("Convierte las pequeñas alegrías diarias en la vitalidad del mañana. Mi compañero personal de IA 'Resonance AI' apoya tu felicidad. #ResonanceAI");
+            } else if (shortLang === 'pt') {
+                text = encodeURIComponent("Transforme as pequenas alegrias diárias na vitalidade de amanhã. Meu companheiro pessoal de IA 'Resonance AI' apoia a sua felicidade. #ResonanceAI");
+            } else {
+                text = encodeURIComponent("Turn small daily joys into tomorrow's vitality. My personal AI companion 'Resonance AI' supports your happiness. #ResonanceAI");
+            }
+            
+            // TODO: 公開後に実際のURLに置き換えてください
+            const url = encodeURIComponent("https://resonance-ai.example.com/index/");
+            window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+        }
+    </script>
+</body>
+</html>
