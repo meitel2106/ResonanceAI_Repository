@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://resonance-ai.example.com/index/">
     <!-- 🌟 修正：indexフォルダ内にある場合の画像の絶対パス -->
     <!-- TODO: 実際のURLに合わせて書き換えてください -->
-    <meta property="og:image" content="https://resonance-ai.example.com/index/images/feature_graphic_ja_1024x500.png">
+    <meta property="og:image" content="https://resonance-ai.example.com/index/images/feature_graphic_ja_1024x500.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Tailwind CSS -->
@@ -140,10 +140,12 @@
                 </div>
                 <span class="text-2xl font-bold serif text-white tracking-wide" id="logoText">Resonance AI</span>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.resonanceai" target="_blank" rel="noopener noreferrer" class="hidden md:inline-block bg-brand-gold text-brand-dark px-6 py-2 rounded-full font-bold hover:bg-yellow-300 transition-colors shadow-lg animate-ripple" data-i18n="start_free">
-                無料で始める
-            </a>
-        </div>
+            <!-- 言語切替 -->
+
+                <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.resonanceai" target="_blank" rel="noopener noreferrer" class="hidden md:inline-block bg-brand-gold text-brand-dark px-6 py-2 rounded-full font-bold hover:bg-yellow-300 transition-colors shadow-lg animate-ripple" data-i18n="start_free">
+                    無料で始める
+                </a>
+                    </div>
     </header>
 
     <!-- 🌟 ヒーローセクション（ファーストビュー） 🌟 -->
@@ -300,34 +302,14 @@
         </div>
     </section>
 
-    <!-- 🌟 バズり確定！シェア＆ベネフィットセクション 🌟 -->
-    <section class="py-24 hero-bg text-center relative">
-        <div class="particles"></div>
-        <div class="container mx-auto px-6 relative z-10 reveal">
-            <h2 class="text-3xl md:text-4xl font-bold text-white serif mb-8" data-i18n="share_title">
-                あなたの心は、今何％満たされていますか？
-            </h2>
-            <p class="text-gray-300 mb-10 max-w-2xl mx-auto text-lg font-light leading-relaxed" data-i18n="share_desc">
-                誰かに話すほどではないけれど、確かにそこにあった小さな喜び。<br>
-                それを言葉にするだけで、自己肯定感は静かに育っていきます。<br>
-                Resonance AIで、あなただけの「心のオアシス」を作りませんか？
-            </p>
-            
-            <div class="flex justify-center space-x-4">
-                <button onclick="shareOnTwitter()" class="bg-white text-[#1DA1F2] px-6 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition flex items-center">
-                    <i class="fab fa-twitter mr-2"></i> <span data-i18n="share_btn">Xでシェア</span>
-                </button>
-            </div>
-            <p class="text-gray-400 text-sm mt-4">#ResonanceAI #心の癒やし #自己肯定感</p>
-        </div>
-    </section>
+
 
     <!-- 🌟 CTA / ダウンロードセクション 🌟 -->
     <section id="download" class="py-20 bg-white">
         <div class="container mx-auto px-6 text-center reveal">
             <div class="w-20 h-20 rounded-2xl overflow-hidden mx-auto shadow-2xl mb-6">
                 <!-- アプリアイコン（imagesフォルダ指定） -->
-                <img src="images/unnamed.png" alt="Resonance AI Icon" class="w-full h-full object-cover">
+                <img src="images/unnamed.jpg" alt="Resonance AI Icon" class="w-full h-full object-cover">
             </div>
             <h2 class="text-3xl font-bold text-brand-dark serif mb-4">Resonance AI</h2>
             <p class="text-gray-600 mb-8" data-i18n="cta_desc">あなたの幸せをサポートします。今すぐ無料でダウンロード。</p>
@@ -350,12 +332,12 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center space-x-3 mb-4 md:mb-0">
-                    <img src="images/unnamed.png" alt="Icon" class="w-6 h-6 rounded-md object-cover">
+                    <img src="images/unnamed.jpg" alt="Icon" class="w-6 h-6 rounded-md object-cover">
                     <span class="font-serif text-white text-lg">Resonance AI</span>
                 </div>
                 <div class="flex space-x-6 text-sm">
-                    <a href="#" class="hover:text-white transition" data-i18n="footer_terms">利用規約</a>
-                    <a href="#" class="hover:text-white transition" data-i18n="footer_privacy">プライバシーポリシー</a>
+                    <a href="https://meitel2106.github.io/ResonanceAI_Repository/privacy.html" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" data-i18n="footer_terms">利用規約</a>
+                    <a href="https://meitel2106.github.io/ResonanceAI_Repository/privacy.html" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" data-i18n="footer_privacy">プライバシーポリシー</a>
                     <!-- 🌟 お問い合わせリンク（メーラー起動設定） 🌟 -->
                     <a href="mailto:galaxyexpress111@outlook.jp?subject=Resonance%20AI%20Contact" class="hover:text-white transition" data-i18n="footer_contact">お問い合わせ</a>
                 </div>
@@ -400,9 +382,6 @@
                 f4_p1: "リアルタイムでマッピングされる世界の声",
                 f4_p2: "SNS疲れを癒やす、承認欲求のない安全な場所",
                 f4_img: "マップ上に広がる<br>名もなき旅人たちの声",
-                share_title: "あなたの心は、今何％満たされていますか？",
-                share_desc: "誰かに話すほどではないけれど、確かにそこにあった小さな喜び。<br>それを言葉にするだけで、自己肯定感は静かに育っていきます。<br>Resonance AIで、あなただけの「心のオアシス」を作りませんか？",
-                share_btn: "Xでシェア",
                 cta_desc: "あなたの幸せをサポートします。今すぐ無料でダウンロード。",
                 get_it_on: "GET IT ON",
                 footer_terms: "利用規約",
@@ -439,9 +418,6 @@
                 f4_p1: "Voices of the world mapped in real-time",
                 f4_p2: "A safe place without the need for approval to heal SNS fatigue",
                 f4_img: "Voices of nameless travelers<br>spreading on the map",
-                share_title: "What percentage of your heart is fulfilled right now?",
-                share_desc: "A small joy that was certainly there, even if it's not something to talk about to someone.<br>Just putting it into words will quietly nurture your self-affirmation.<br>Why don't you create your own 'oasis of the heart' with Resonance AI?",
-                share_btn: "Share on X",
                 cta_desc: "Supporting your happiness. Download for free now.",
                 get_it_on: "GET IT ON",
                 footer_terms: "Terms of Service",
@@ -478,9 +454,6 @@
                 f4_p1: "Voces del mundo mapeadas en tiempo real",
                 f4_p2: "Un lugar seguro sin la necesidad de aprobación para curar la fatiga de las redes sociales",
                 f4_img: "Voces de viajeros sin nombre<br>extendiéndose en el mapa",
-                share_title: "¿Qué porcentaje de tu corazón está lleno en este momento?",
-                share_desc: "Una pequeña alegría que ciertamente estuvo allí, incluso si no es algo de lo que hablar con alguien.<br>Solo ponerlo en palabras nutrirá en silencio tu autoafirmación.<br>¿Por qué no creas tu propio 'oasis del corazón' con Resonance AI?",
-                share_btn: "Compartir en X",
                 cta_desc: "Apoyando tu felicidad. Descárgalo gratis ahora.",
                 get_it_on: "DISPONIBLE EN",
                 footer_terms: "Términos de Servicio",
@@ -517,9 +490,6 @@
                 f4_p1: "Vozes do mundo mapeadas em tempo real",
                 f4_p2: "Um lugar seguro sem necessidade de aprovação para curar a fadiga das redes sociais",
                 f4_img: "Vozes de viajantes sem nome<br>se espalhando pelo mapa",
-                share_title: "Que porcentagem do seu coração está preenchida agora?",
-                share_desc: "Uma pequena alegria que certamente estava lá, mesmo que não seja algo para conversar com alguém.<br>Apenas colocá-lo em palavras nutrirá silenciosamente sua autoafirmação.<br>Por que você não cria seu próprio 'oásis do coração' com Resonance AI?",
-                share_btn: "Compartilhar no X",
                 cta_desc: "Apoiando sua felicidade. Baixe gratuitamente agora.",
                 get_it_on: "DISPONÍVEL NO",
                 footer_terms: "Termos de Serviço",
@@ -548,6 +518,13 @@
             document.documentElement.lang = shortLang;
         });
 
+        // 言語自動リダイレクト（手動切替済みの場合はスキップ）
+        (function() {
+            const lang = (navigator.language || navigator.userLanguage || 'ja').split('-')[0].toLowerCase();
+            const map = { en: 'index.html', es: 'index_es.html', pt: 'index_pt.html' };
+            if (map[lang]) window.location.replace(map[lang]);
+        })();
+
         // スクロール時のヘッダー背景色変更
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
@@ -557,14 +534,12 @@
                 header.classList.remove('py-4');
                 header.classList.add('py-2');
                 logoText.classList.remove('text-white');
-                logoText.classList.add('text-brand-dark');
-            } else {
+                logoText.classList.add('text-brand-dark');            } else {
                 header.classList.remove('bg-white', 'shadow-md');
                 header.classList.add('py-4');
                 header.classList.remove('py-2');
                 logoText.classList.add('text-white');
-                logoText.classList.remove('text-brand-dark');
-            }
+                logoText.classList.remove('text-brand-dark');            }
         });
 
         // スクロールアニメーション
@@ -586,26 +561,7 @@
             revealObserver.observe(el);
         });
 
-        // Twitterシェアボタンの多言語対応機能
-        function shareOnTwitter() {
-            let shortLang = navigator.language.split('-')[0].toLowerCase();
-            if (!i18n[shortLang]) shortLang = 'ja';
-            
-            let text = "";
-            if (shortLang === 'ja') {
-                text = encodeURIComponent("日々の小さな幸せを明日の活力に。私に寄り添うAIコンパニオン「Resonance AI」が、あなたの幸せをサポートします。 #ResonanceAI #自己肯定感");
-            } else if (shortLang === 'es') {
-                text = encodeURIComponent("Convierte las pequeñas alegrías diarias en la vitalidad del mañana. Mi compañero personal de IA 'Resonance AI' apoya tu felicidad. #ResonanceAI");
-            } else if (shortLang === 'pt') {
-                text = encodeURIComponent("Transforme as pequenas alegrias diárias na vitalidade de amanhã. Meu companheiro pessoal de IA 'Resonance AI' apoia a sua felicidade. #ResonanceAI");
-            } else {
-                text = encodeURIComponent("Turn small daily joys into tomorrow's vitality. My personal AI companion 'Resonance AI' supports your happiness. #ResonanceAI");
-            }
-            
-            // TODO: 公開後に実際のURLに置き換えてください
-            const url = encodeURIComponent("https://resonance-ai.example.com/index/");
-            window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
-        }
+
     </script>
 </body>
 </html>
