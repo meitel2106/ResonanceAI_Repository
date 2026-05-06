@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonance AI（レゾナンスAI）| あなたの幸せをサポートします</title>
+    <meta name="description" content="日々の小さな「よかった」を拾い集め、明日の活力へ。心理学と最新AIが融合した、あなただけの専属コンパニオン。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; color: #2c3e50; scroll-behavior: smooth; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif JP', serif; }
+        .hero-bg { background: linear-gradient(135deg, #0a1f16 0%, #144d32 100%); position: relative; overflow: hidden; }
+        .particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: radial-gradient(#d4af37 1px, transparent 1px); background-size: 50px 50px; opacity: 0.1; }
+        .mockup-frame { border: 8px solid #1f2937; border-radius: 2rem; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); background-color: #fff; position: relative; }
+        .mockup-frame::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 40%; height: 1.5rem; background-color: #1f2937; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; z-index: 10; }
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="fixed w-full top-0 z-50 transition-all duration-300" id="header">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="images/unnamed.jpg" alt="Icon" class="w-10 h-10 rounded-xl overflow-hidden shadow-lg">
+                <span class="text-2xl font-bold serif text-white tracking-wide" id="logoText">Resonance AI</span>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.resonanceai" target="_blank" class="hidden md:inline-block bg-brand-gold text-brand-dark px-6 py-2 rounded-full font-bold shadow-lg">無料で始める</a>
+        </div>
+    </header>
+
+    <section class="hero-bg min-h-screen flex items-center pt-20 relative">
+        <div class="particles"></div>
+        <div class="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <p class="text-brand-gold font-semibold mb-4 tracking-widest">心が安らぐ、明日への道標</p>
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight serif mb-6">あなたの幸せを<br>サポートします。</h1>
+                <p class="text-gray-300 text-lg mb-10">あなたの小さな「よかった」を拾い集め、明日の幸せに変える。専属のAIコンパニオン。</p>
+                <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.resonanceai" target="_blank" class="bg-brand-gold text-brand-dark px-8 py-4 rounded-full font-bold text-lg inline-flex items-center shadow-xl">
+                    <i class="fab fa-google-play mr-2"></i> Google Playで手に入れる
+                </a>
+            </div>
+            <div class="lg:w-1/2 mt-16 flex justify-center">
+                <img src="images/feature_graphic_ja_1024x500.jpg" class="rounded-2xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white text-center">
+        <div class="container mx-auto px-6 reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-dark serif mb-6">AIと共に、人生をデザインする。</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Resonance AIは、あなたの感情に寄り添い、心理学的な視点から幸せへの道筋を一緒に考えるパートナーです。</p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-light">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-32 reveal">
+                <div class="md:w-1/2 mb-10 md:pr-12">
+                    <h3 class="text-3xl font-bold text-brand-dark serif mb-6">あなたの"よかった"を<br>明日の幸せに変える</h3>
+                    <p class="text-gray-600 mb-6">今日あった「小さな幸せ」をAIに教えてください。AIがその言葉を優しく受け止め、ポジティブな感情を増幅させます。</p>
+                </div>
+                <div class="md:w-5/12 mockup-frame">
+                    <img src="images/No1_ja_play.jpg" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center">
+        <p>&copy; 2026 Galaxy Express. All rights reserved.</p>
+        <p class="mt-4"><a href="mailto:galaxyexpress111@outlook.jp" class="hover:text-white">お問い合わせ</a></p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) header.classList.add('bg-white', 'shadow-md', 'py-2');
+            else header.classList.remove('bg-white', 'shadow-md');
+        });
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>
